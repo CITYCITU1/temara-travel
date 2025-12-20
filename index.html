@@ -1,205 +1,43 @@
-<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html><html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مدينة تمارة - الصفحة السياحية</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            direction: rtl;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        nav {
-            background-color: #f8f9fa;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #007bff;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        h2 {
-            color: #007bff;
-            margin-bottom: 20px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        }
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .card-body {
-            padding: 15px;
-        }
-        footer {
-            background-color: #f8f9fa;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
-        }
-        .contact-info p {
-            margin: 5px 0;
-        }
-        .gallery img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>رأي الزبناء</title>
+  <style>
+    body { font-family: Arial, sans-serif; background:#f5f5f5; margin:0; padding:0; }
+    header { background:#0d6efd; color:#fff; padding:15px; text-align:center; }
+    .container { max-width:900px; margin:20px auto; padding:10px; }
+    .card { background:#fff; border-radius:10px; padding:15px; margin-bottom:15px; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .stars { color:#f1c40f; }
+    button { background:#0d6efd; color:#fff; border:none; padding:10px 15px; border-radius:6px; cursor:pointer; }
+    input, textarea { width:100%; padding:8px; margin:5px 0; border-radius:6px; border:1px solid #ccc; }
+    footer { text-align:center; padding:10px; color:#777; }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>موقع رأي الزبناء</h1>
+    <p>شارك رأيك وساعد الآخرين</p>
+  </header>  <div class="container">
+    <div class="card">
+      <h3>مطعم السلام</h3>
+      <div class="stars">★★★★★</div>
+      <p>خدمة ممتازة والأكل بنين بزاف.</p>
+    </div><div class="card">
+  <h3>محل إلكترونيات</h3>
+  <div class="stars">★★★☆☆</div>
+  <p>الثمن مزيان ولكن الخدمة متوسطة.</p>
+</div>
 
-<header>
-    <h1>مرحبًا بكم في مدينة تمارة</h1>
-    <p>استكشف الطبيعة، الثقافة، والشواطئ الخلابة</p>
-</header>
+<div class="card">
+  <h3>أضف رأيك</h3>
+  <input type="text" placeholder="اسم الخدمة أو المنتوج" />
+  <textarea rows="4" placeholder="اكتب رأيك هنا"></textarea>
+  <button>إرسال</button>
+</div>
 
-<nav>
-    <a href="#about">عن تمارة</a>
-    <a href="#attractions">المعالم السياحية</a>
-    <a href="#activities">الأنشطة والفعاليات</a>
-    <a href="#food">المطاعم والمأكولات</a>
-    <a href="#accommodation">الإقامة</a>
-    <a href="#services">خدمات الزوار</a>
-    <a href="#tips">نصائح السفر</a>
-    <a href="#gallery">معرض الصور</a>
-    <a href="#contact">تواصل معنا</a>
-</nav>
-
-<section id="about">
-    <h2>عن تمارة</h2>
-    <p>تمارة هي مدينة ساحلية رائعة تقع بالقرب من العاصمة الرباط على الساحل الأطلسي للمغرب. تشتهر بشواطئها الذهبية، طبيعتها الخلابة، وتراثها الثقافي الغني.</p>
-    <ul>
-        <li>الموقع: الساحل الأطلسي، شمال المغرب</li>
-        <li>عدد السكان: حوالي 250,000 نسمة</li>
-        <li>المناخ: معتدل على مدار السنة</li>
-    </ul>
-</section>
-
-<section id="attractions">
-    <h2>المعالم السياحية</h2>
-    <div class="grid">
-        <div class="card">
-            <img src="https://via.placeholder.com/400x200?text=شاطئ+تمارة" alt="شاطئ تمارة">
-            <div class="card-body">
-                <h3>شاطئ تمارة الكبير</h3>
-                <p>شاطئ رائع للسباحة وركوب الأمواج والتنزه على الرمال الذهبية.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/400x200?text=القصبة+القديمة" alt="القصبة القديمة">
-            <div class="card-body">
-                <h3>القصبة القديمة</h3>
-                <p>تاريخ عريق ومباني تقليدية تعكس روح المدينة.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/400x200?text=حديقة+الأمير" alt="حديقة الأمير مولاي عبد الله">
-            <div class="card-body">
-                <h3>حديقة الأمير مولاي عبد الله</h3>
-                <p>مكان مثالي للنزهات والاستمتاع بالطبيعة الخضراء.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="activities">
-    <h2>الأنشطة والفعاليات</h2>
-    <ul>
-        <li>الرياضات المائية: التزلج على الأمواج، ركوب الزوارق، وصيد الأسماك</li>
-        <li>المشي وركوب الدراجات على الساحل والمسارات الطبيعية</li>
-        <li>المهرجانات المحلية والفنون التقليدية على مدار السنة</li>
-    </ul>
-</section>
-
-<section id="food">
-    <h2>المطاعم والمأكولات</h2>
-    <ul>
-        <li>مأكولات بحرية طازجة في مطاعم الشاطئ</li>
-        <li>الكسكس والطاجين المغربي في المطاعم التقليدية</li>
-        <li>العصائر الطبيعية والحلويات المغربية في المقاهي المحلية</li>
-    </ul>
-</section>
-
-<section id="accommodation">
-    <h2>الإقامة</h2>
-    <ul>
-        <li>فنادق حديثة على الساحل</li>
-        <li>شقق سياحية مفروشة</li>
-        <li>نُزل ومبيت وإفطار للعائلات</li>
-    </ul>
-</section>
-
-<section id="services">
-    <h2>خدمات الزوار</h2>
-    <ul>
-        <li>وسائل النقل المحلي والقطارات والحافلات</li>
-        <li>مواقف سيارات بالقرب من الشواطئ والمعالم</li>
-        <li>مراكز طوارئ وخدمات طبية</li>
-        <li>خرائط إلكترونية ومطبوعة للزوار</li>
-    </ul>
-</section>
-
-<section id="tips">
-    <h2>نصائح السفر</h2>
-    <ul>
-        <li>أفضل وقت للزيارة: من أبريل إلى أكتوبر</li>
-        <li>ارتدِ ملابس مريحة للأنشطة الخارجية</li>
-        <li>جرّب المأكولات البحرية الطازجة</li>
-        <li>احمل كاميرا لالتقاط غروب الشمس الخلاب على الشاطئ</li>
-    </ul>
-</section>
-
-<section id="gallery">
-    <h2>معرض الصور</h2>
-    <div class="grid gallery">
-        <img src="https://via.placeholder.com/400x200?text=صورة+1" alt="صورة 1">
-        <img src="https://via.placeholder.com/400x200?text=صورة+2" alt="صورة 2">
-        <img src="https://via.placeholder.com/400x200?text=صورة+3" alt="صورة 3">
-        <img src="https://via.placeholder.com/400x200?text=صورة+4" alt="صورة 4">
-    </div>
-</section>
-
-<section id="contact">
-    <h2>تواصل معنا</h2>
-    <div class="contact-info">
-        <p>الهاتف: +212 537 000 000</p>
-        <p>البريد الإلكتروني: info@temara.ma</p>
-        <p>العنوان: تمارة، المغرب</p>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2025 جميع الحقوق محفوظة - مدينة تمارة السياحية</p>
-</footer>
-
+  </div>  <footer>
+    © 2025 - موقع رأي الزبناء
+  </footer>
 </body>
 </html>
